@@ -51,18 +51,21 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        {this.state.show && (
-          <div>
-            <h1>{this.state.person.fullName}</h1>
-            <h2>{this.state.person.bio}</h2>
-            <img src={aymenPhoto} alt="aymen henchir"></img>
-            <h3>{this.state.person.profession}</h3>
-            <h3>
-              the life cycle= <input type="text" value={this.state.count} />{" "}
-              secondes
-            </h3>
-          </div>
-        )}
+        <div className="profile">
+          {" "}
+          {this.state.show && (
+            <div>
+              <img src={aymenPhoto} alt="aymen henchir"></img>
+              <h2>{this.state.person.fullName}</h2>
+              <h3>{this.state.person.profession}</h3>
+              <p>{this.state.person.bio}</p>
+              <h4>
+                life cycle= <input type="text" value={this.state.count} />
+                secondes
+              </h4>
+            </div>
+          )}
+        </div>
         <button
           onClick={() => {
             this.handleShowPerson();

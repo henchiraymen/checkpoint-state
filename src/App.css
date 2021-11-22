@@ -1,7 +1,31 @@
 .app {
+  margin: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   text-align: center;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 400px;
+  border-radius: 10%;
+  border-color: black;
+}
+img {
+  width: 300px;
+  border-radius: 10%;
+}
+h2 {
+  color: black;
+  font-style: italic;
+}
+.btn {
+  background-color: gray;
+  height: 30px;
+  color: white;
 }
